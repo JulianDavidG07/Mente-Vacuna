@@ -1,0 +1,44 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  header{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+
+  #pregunta {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    min-height: 60px;
+  }
+  button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin: 0.5rem;
+  }
+  
+  /* Modal */
+  .modal {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  .modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+  }
+  .modal-content button {
+    margin: 1rem;
+  }
+  
+  

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Generador de Preguntas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="header">
+        <button id="btn-cambiar-modo">Modo</button>
+    </div>
+  <!-- Modal de selección de modo -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <h2>Selecciona un modo</h2>
+      <button onclick="seleccionarModo('casual')">Casual</button>
+      <button onclick="seleccionarModo('cristiano')">Cristiano</button>
+    </div>
+  </div>
+
+  <!-- Contenido principal -->
+  <h1>Juego de Preguntas</h1>
+  <div id="modo-actual" style="margin-top: -1rem; font-weight: bold;"></div>
+  <div id="pregunta">Selecciona un modo para comenzar</div>
+  <button id="btn-siguiente" disabled>Siguiente Pregunta</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
