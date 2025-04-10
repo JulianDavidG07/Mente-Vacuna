@@ -24,13 +24,31 @@ document.getElementById('btn-cambiar-modo').addEventListener('click', () => {
   mostrarModal();
 });
 
-// Mostrar modal
+
 function mostrarModal() {
-  document.getElementById('modal').style.display = 'flex';
-  document.getElementById('pregunta').textContent = "Selecciona un modo para comenzar";
-  document.getElementById('modo-actual').textContent = "";
-  document.getElementById('btn-siguiente').disabled = true;
-}
+    document.getElementById('modal').style.display = 'flex';
+  
+    // Solo muestra este mensaje si no se ha elegido ningún modo aún
+    if (!preguntasModoActual) {
+      document.getElementById('pregunta').textContent = "Selecciona un modo para comenzar";
+      document.getElementById('btn-siguiente').disabled = true;
+    }
+  
+    // Habilita ambos botones al inicio
+    const btnCasual = document.getElementById('btn-modo-casual');
+    const btnCristiano = document.getElementById('btn-modo-cristiano');
+    btnCasual.disabled = false;
+    btnCristiano.disabled = false;
+  
+    // Deshabilita el botón del modo actual
+    if (preguntasModoActual === 'casual') {
+      btnCasual.disabled = true;
+    } else if (preguntasModoActual === 'cristiano') {
+      btnCristiano.disabled = true;
+    }
+  }
+  
+  
 
 // Selección de modo
 async function seleccionarModo(modo) {
