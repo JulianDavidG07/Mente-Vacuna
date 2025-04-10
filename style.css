@@ -27,7 +27,12 @@ body {
 
   #pregunta {
     font-size: 1.5rem;
-    margin: 2rem 0;
+    margin: 2rem 0px;
+    background: #ffffff69;
+    backdrop-filter: blur(10px);
+    padding: 12px 5px;
+    border-radius: 20px;
+    border: 2px solid #00000069;
   }
   button {
     padding: 0.5rem 1rem;
